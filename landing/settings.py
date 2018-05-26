@@ -22,7 +22,7 @@ SECRET_KEY = '=ty$^@5c8omf@ulm$5*ui!we6u%a2fo6uc2+hq@f&amod()l8l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'landing.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'landing_prod',
+        'USER': 'u_landing',
+        'PASSWORD': 'misterbean101',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -127,13 +131,9 @@ STATICFILES_DIRS = (
 
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_prod")
+STATIC_ROOT = os.path.join(BASE_DIR, "../static/", "static_prod")
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "../static/", "media")
 
-try:
-    from .settings_prod import*
-except:
-    pass
