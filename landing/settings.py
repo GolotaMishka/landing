@@ -122,15 +122,18 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, "static",),
+  os.path.join(BASE_DIR, "static","static_dev"),
 )
+
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_prod")
 
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
 
-
 try:
-    from .setting_prod import*
+    from .settings_prod import*
 except:
     pass

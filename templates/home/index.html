@@ -1,0 +1,447 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>English</title>
+   
+    <!-- Styles -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    
+    
+  </head>
+
+
+<body>
+
+<section id="menu">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+      <div class="container-fluid">
+       <div class="row">
+         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" page-scroll>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#first_content">Зачем</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#program_section">Как</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#profile_section">Обо мне</a>
+                    </li>
+                    <!--
+                    <li class="">
+                        <a class="page-scroll" href="#review_section">Отзывы</a>
+                    </li> -->
+                    <li class="">
+                        <a class="page-scroll" href="#form_section">Подать заявку</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contacts_section">Контакты</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+       </div>
+      </div>
+  </nav>
+</section>
+
+<header >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+        <div class="slogan">
+          <h1>Хватит платить за время, пока репетитор сидит и смотрит, а ты выполняешь упражнения</h1>
+        </div>
+        
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4" >
+        <div class="header_button">
+          <a href="#form_section">Подать заявку</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section id="about_program">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+        <div class="info">
+          <h4>Все мои задания ты будешь выполнять дома. Во время наших встреч или скайп-колов мы будем работать только над твоей речью, произношением и проверкой самостоятельной работы. </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="first_content">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12">
+       <div class="slogan_first_content">
+         <h2>Курс для тебя, если:</h2>
+       </div>
+      </div>     
+    </div> 
+
+    <div class="row">
+
+      <div class="col-lg-3 aims_block wow bounceInLeft" data-wow-duration:"3s" >
+       <div class="circle_image">
+        <img src="{% static 'img/header3.jpg' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>
+          Говоришь с ошибками, <br>
+          хочешь улучшить произношение
+        </p>
+         
+       </div>
+      </div> 
+
+      <div class="col-lg-3 aims_block wow bounceInLeft" data-wow-duration:"3s">
+       <div class="circle_image">
+         <img src="{% static 'img/header3.jpg' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>Путаешь времена</p>
+        
+       </div>
+      </div> 
+
+      <div class="col-lg-3 aims_block wow bounceInRight" data-wow-duration:"3s">
+       <div class="circle_image">
+         <img src="{% static 'img/header3.jpg' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>
+          Стараешься учить новые слова,<br>
+           но ничего не получается
+        </p>
+         
+       </div>
+      </div> 
+
+      <div class="col-lg-3 aims_block wow bounceInRight" data-wow-duration:"3s">
+       <div class="circle_image">
+         <img src="{% static 'img/header3.jpg' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>
+           Готов/а интенсивно работать <br>на протяжении месяца
+        </p>
+        
+       </div>
+      </div> 
+
+    </div> 
+  </div>
+</section>
+
+
+<section id="program_section">
+
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12 ">
+        <div class="slogan_program">
+          <h2>Программа курса</h2>
+        </div>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="accordionWrapper">
+        <div class="accordionItem open">
+              <h2 class="accordionItemHeading">Стратегический Meeting – 1 час</h2>
+              <div class="accordionItemContent">
+                <p>Наша первая встреча. Понимаем твои слабые места в английском, ставим задачи на курс. Учимся выжимать из каждого последующего задания курса максимальный результат.</p>
+              </div>
+            </div>
+
+            <div class="accordionItem close">
+              <h2 class="accordionItemHeading">Listening – 14 часов </h2>
+              <div class="accordionItemContent">
+                <p>Учимся воспринимать английский на слух.  Понимаем сериалы без субтитров – и британские, и американские!
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="accordionItem close">
+              <h2 class="accordionItemHeading">Reading – 45 000 слов</h2>
+              <div class="accordionItemContent">
+                <p>Даём мозгу увидеть уже знакомые слова и грамматические конструкции в текстах. Прочитываем целую книгу на английском и учим вокабуляр из неё.</p>
+              </div>
+            </div>
+
+            <div class="accordionItem close">
+              <h2 class="accordionItemHeading">Writing – 2 000 слов</h2>
+              <div class="accordionItemContent">
+                <p>Красиво выражаем мысли на бумаге. Делаем обзоры-рецензии фильмов и книг. В конце курса ты наконец-то сможешь написать грамотный пост в Facebook на английском.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordionItem close">
+              <h2 class="accordionItemHeading">Grammar – 40 упражнений</h2>
+              <div class="accordionItemContent">
+                <p>Строим приятные слуху предложения. Понимаем разницу между Past Simple и Present Perfect и всеми четырьмя Conditionals.
+
+
+                </p>
+              </div>
+            </div>
+
+            <div class="accordionItem close">
+              <h2 class="accordionItemHeading">Speaking – 9 часов</h2>
+              <div class="accordionItemContent">
+                <p>Чистим речь от ошибок. Наполняемся новыми словами и выражениями, работаем над произношением. Больше не боимся разговоров с американцами. Видимся/слышимся 3 раза в неделю – дважды на 35 минут, один раз – на 50. Часть заданий будем выполнять с помощью аудиосообщений.
+                </p>
+              </div>
+            </div>
+        </div>      
+      </div>
+    
+      
+    </div>
+    
+
+    
+  </div>
+</section>
+
+
+
+
+
+<section id="profile_section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1">
+        <div class="image_profile">
+          <img src="{% static 'img/profile.PNG' %}" alt="profile">
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="description_profile">
+          <h3><q>Привет! <br>
+
+            Меня зовут Алина. Я учу учиться, <br>систематически гоняю заграницу и знаю, что тебе пригодится в реальном общении с <br>англоговорящими людьми. <br>
+
+            Я не даю сертификатов, но даю знания.</q> 
+
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<section id="review_section">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12 text-center ">
+        <div class="slogan_review">
+          <h2>Отзывы</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row row_review" >
+      <div class="col-lg-2 col-lg-offset-1">
+        <a href="https://www.facebook.com/mishka.golota"><div class="image_review">
+        </div></a>
+      </div>
+      <div class="col-lg-3">
+        <div class="review_coment">
+          <h4><a href="https://www.facebook.com/mishka.golota">Mishka Golota</a></h4>
+          <p>Aloha, Aloha! Мне понравился курс - <br>интенсив в вашей школе. В первую очередь <br>хочу выделить преподавателя - Алену. <br>Понравилась подача</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <a href="#"><div class="image_review">
+        </div></a>
+      </div>
+      <div class="col-lg-3">
+        <div class="review_coment">
+          <h4><a href="https://www.facebook.com/mishka.golota">Mishka Golota</a></h4>
+          <p>Aloha, Aloha! Мне понравился курс - <br>интенсив в вашей школе. В первую очередь <br>хочу выделить преподавателя - Алену. <br>Понравилась подача</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row_review">
+      <div class="col-lg-2 col-lg-offset-1">
+        <a href="#"><div class="image_review">
+        </div></a>
+      </div>
+      <div class="col-lg-3">
+        <div class="review_coment">
+          <h4><a href="https://www.facebook.com/mishka.golota">Mishka Golota</a></h4>
+          <p>Aloha, Aloha! Мне понравился курс - <br>интенсив в вашей школе. В первую очередь <br>хочу выделить преподавателя - Алену. <br>Понравилась подача</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <a href="#"><div class="image_review">
+        </div></a>
+      </div>
+      <div class="col-lg-3">
+        <div class="review_coment">
+          <h4><a href="https://www.facebook.com/mishka.golota">Mishka Golota</a></h4>
+          <p>Aloha, Aloha! Мне понравился курс - <br>интенсив в вашей школе. В первую очередь <br>хочу выделить преподавателя - Алену. <br>Понравилась подача</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="form_section">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="slogan_form">
+          <h2>Подать заявку</h2>
+        </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-lg-offset-3 col-md-offset-3 col-xs-offset-3 text-center ">
+        <div id="form-main">
+          <div id="form-div">
+            <form  action="" method="post" class="form formValidation" id="form1">{% csrf_token %}
+              
+              <p class="name">
+                <input  name="{{ form.name.name }}" autocomplete="off" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
+              </p>
+
+               <p class="phone">
+                <input name="{{ form.phone_number.name }}" autocomplete="off" type="text" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
+              </p>
+              
+              <p class="email">
+                <input name="{{ form.email.name }}" autocomplete="off" type="email" class="validate[required,custom[email]] feedback-input inputValidation" id="email" placeholder="Email" />
+              </p>
+              
+              
+              <p class="text">
+                <select name="{{ form.level.name }}" class="inputValidation" id="level" >
+                  <option  class=" feedback-input" disabled selected>Уровень знаний</option>
+                  <option class=" feedback-input" value="Elementary">Elementary</option>
+                  <option class=" feedback-input" value="Pre-Intermediate">Pre-Intermediate</option>
+                  <option class=" feedback-input"  value="Intermediate">Intermediate</option>
+                  <option class=" feedback-input" value="Upper-Intermediateate">Upper-Intermediateate</option>
+                  <option class=" feedback-input" value="Advanced">Advanced</option>
+                  <option class=" feedback-input" value="Proficiency">Proficiency</option>
+                </select>
+                
+              </p>
+              
+              
+              <div class="submit">
+                <input type="submit" value="Отправить" id="button-blue"/>
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+</section>  
+
+
+
+
+<section id="contacts_section">
+    <div class="container-fluid">
+      
+      <div class="row" id="map">
+        <div class="col-lg-12">
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.665759251275!2d30.504494867482173!3d50.43800039614378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefbf4bc2973%3A0xcc5f63a4944d66d8!2z0YPQuy4g0JDQvdGC0L7QvdC-0LLQuNGH0LAsIDE0LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1527260663155" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-lg-12 text-center">
+          <div class="qeustion">
+            <h3>Остались вопросы?</h3>
+            <p>Напишите мне в соцсети</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-lg-12 follow text-center">
+          <a href="https://www.facebook.com/shychkina"><i class="fab fa-facebook-f" ></i>
+          </a>
+          <a href="https://t.me/shychkina"><i class="fab fa-telegram" ></i>
+          <a href="https://www.instagram.com/shychkina/"><i class="fab fa-instagram"></i>
+
+        </div>
+        
+      </div>
+      
+      
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/accordion.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/valideForm.js' %}"></script>
+<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+
+
+
+
+
+<script>
+    new WOW().init();
+</script>
+  </body>
+</html>

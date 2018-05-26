@@ -3,10 +3,12 @@ from django.db import models
 
 class Subscriber(models.Model):
     email = models.EmailField()
-    name = models.CharField(max_length=128)
+    name = models.CharField(max_length=128,default='name')
+    phone_number = models.CharField(max_length=12,default='number')
+    level = models.CharField(max_length=128,default='level')
 
     def __str__(self):
-        return "Пользователь %s %s" % (self.name, self.email,)
+        return "Подписчик %s %s" % (self.name, self.email,)
 
     class Meta:
         verbose_name = 'MySubscriber'

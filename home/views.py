@@ -14,6 +14,6 @@ def landing(request):
 
         new_form = form.save()
 
-    return render(request, 'home/landing.html', locals())
+    return render(request, 'home/index.html', locals())
 
 
