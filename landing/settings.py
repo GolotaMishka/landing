@@ -77,12 +77,8 @@ WSGI_APPLICATION = 'landing.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'landing_prod',
-        'USER': 'u_landing',
-        'PASSWORD': 'misterbean101',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -126,14 +122,18 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, "static","static_dev"),
+  os.path.join(BASE_DIR, "static", "static_dev"),
 )
 
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, "../static/", "static_prod")
+STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_prod")
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "../static/", "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
 
+#uncomment
+try:
+    from .settings_prod import *
+except:
+    pass
