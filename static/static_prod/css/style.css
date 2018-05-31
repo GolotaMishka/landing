@@ -1,7 +1,7 @@
 @font-face {
-font-family: "AvenirNext-Regular";  
-src: url("../fonts/AvenirNext-Regular.ttf") format("truetype"); 
-font-style: normal; 
+font-family: "AvenirNext-Regular";
+src: url("../fonts/AvenirNext-Regular.ttf") format("truetype");
+font-style: normal;
 font-weight: normal;
  }
 
@@ -33,6 +33,20 @@ h1{
   color:#333333;
 }
 
+.inputError{
+
+  color: #d03e3e;
+}
+select.inputError {
+
+  color: #d03e3e;
+}
+.inputError::-webkit-input-placeholder{
+  color: #d03e3e;
+}
+
+
+
 
 header {
 
@@ -41,10 +55,10 @@ header {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-  
+
   height: 700px;
-  
-      
+
+
 }
 
 
@@ -75,7 +89,7 @@ header {
 }
 .header_button a:hover {
   background: #99cc66;
-} 
+}
 
 
 
@@ -85,13 +99,13 @@ header {
 
 .navbar-default {
     border-color: transparent;
-    
+
 }
 
 .navbar-default .navbar-brand {
     float: left;
     padding:0;
-    
+
 }
 
 
@@ -105,18 +119,18 @@ header {
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
     margin-top:25px;
-    
+
 }
 
 .navbar-default .navbar-toggle {
     border-color: #b6baae;
     background-color: #ff5851;
-    
+
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
-    
+
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -125,7 +139,7 @@ header {
 }
 
 .navbar-default .nav li a {
-    
+
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     font-size:1vw;
@@ -153,15 +167,15 @@ header {
 .navbar {
   background-color:white;
   height:100px;
-  
+
 }
 
-  
+
 
 
 
   /*______________ ABOUT PROGRAM _________*/
-  
+
 section#about_program{
   height:400px;
 }
@@ -179,29 +193,29 @@ section#about_program .info h4{
 }
 
   /*___________First content ________________*/
-  
+
 
   section#first_content {
     padding-top:2%;
-    
+
     height:500px;
     background-color: white;
   }
 
   section#first_content .slogan_first_content {
     text-align:center;
-    
+
   }
   section#first_content .slogan_first_content h2 {
-  
+
   font-family: 'Montserrat', sans-serif;
   font-size:2.6vw;
   color:#333333;
   line-height: 3vw;
   letter-spacing:2px;
-    
+
   }
-  
+
 
   section#first_content .aims_block{
     margin-top:6%;
@@ -223,7 +237,7 @@ section#about_program .info h4{
 
 /*_________________  Program section ________*/
 
-section#program_section{    
+section#program_section{
   background: #fff;
     }
 .accordionWrapper{padding:30px;
@@ -231,7 +245,7 @@ section#program_section{
   float:left;
   width:80%;
   box-sizing:border-box;
-  margin:10%;    
+  margin:10%;
   box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);}
 .accordionItem{
     float:left;
@@ -262,8 +276,8 @@ border-radius: 3px;
     float:left;
     display:block;
     opacity:0.7;
-    
-    
+
+
 }
 .open .accordionItemContent{
         padding: 20px;
@@ -307,7 +321,7 @@ border-radius: 3px;
 }
 section#program_section .slogan_program {
   text-align:center;
-  
+
 }
 section#program_section .slogan_program h2{
   text-align:center;
@@ -335,9 +349,9 @@ section#review_section .row_review{
 section#review_section .image_review {
   height:150px;
   width:150px;
-  background-image: url(../img/review.jpg);
+
   border-radius:150px;
-  
+
 }
 section#review_section h2{
   color:#5738d2;
@@ -355,7 +369,7 @@ section#review_section h4{
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-section#form_section{    
+section#form_section{
   background:white;
   background-size: cover;
   height:700px;
@@ -461,11 +475,11 @@ section#form_section .slogan_form{
   background-color: white;
   color: #99cc99;
 }
-  
+
 .submit:hover {
   color: #3498db;
 }
-  
+
 .ease {
   width: 0px;
   height: 74px;
@@ -504,7 +518,7 @@ section#profile_section {
   padding-top:5%;
 }
 section#profile_section .image_profile{
-  
+
 }
 section#profile_section .image_profile img{
    height:400px;
@@ -532,10 +546,10 @@ section#profile_section .description_profile q {
 
 
   section#contacts_section{
-  
+
   background-color:white;
   padding-bottom:2%;
-  
+
 }
 section#contacts_section h3{
   color:#333333;
@@ -570,7 +584,7 @@ section#contacts_section .follow a{
 section#contacts_section .follow i:nth-child(1){
   margin-right:3%;
   margin-left:3%;
-  
+
 }
 
 section#contacts_section .follow i:hover{
