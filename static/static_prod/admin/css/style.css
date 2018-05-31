@@ -1,0 +1,595 @@
+@font-face {
+font-family: "AvenirNext-Regular";
+src: url("../fonts/AvenirNext-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+ }
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+h1{
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size:3.6vw;
+  color:#333333;
+  line-height: 5vw;
+  letter-spacing:2px;
+  }
+  h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size:4vw;
+  color:#333333;
+}
+
+.inputError{
+
+  color: #d03e3e;
+}
+select.inputError {
+
+  color: #d03e3e;
+}
+.inputError::-webkit-input-placeholder{
+  color: #d03e3e;
+}
+
+
+
+
+header {
+
+  background: url(../img/clouds.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+
+  height: 700px;
+
+
+}
+
+
+
+
+.slogan{
+  margin-top:24%;
+}
+.header_button {
+  text-align:center;
+  margin-top:2%;
+}
+.header_button a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #99cc99;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+.header_button a:hover {
+  background: #99cc66;
+}
+
+
+
+
+/*________________ MENU __________________*/
+
+
+.navbar-default {
+    border-color: transparent;
+
+}
+
+.navbar-default .navbar-brand {
+    float: left;
+    padding:0;
+
+}
+
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: white;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+    margin-top:25px;
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #b6baae;
+    background-color: #ff5851;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #a3b7f0;
+}
+
+.navbar-default .nav li a {
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size:1vw;
+    margin-right:4vw;
+    color: #cccccc ;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #cccc99;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: white;
+    background-color: #99cc99;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    background-color: #99cc66;
+}
+.navbar {
+  background-color:white;
+  height:100px;
+
+}
+
+
+
+
+
+  /*______________ ABOUT PROGRAM _________*/
+
+section#about_program{
+  height:400px;
+}
+section#about_program .info{
+  padding-top:12%;
+  text-align:center;
+}
+section#about_program .info h4{
+  text-align:center;
+  font-family: 'AvenirNext-Regular', serif;
+  font-size:2.2vw;
+  color:#333333;
+  line-height: 3vw;
+  letter-spacing:2px;
+}
+
+  /*___________First content ________________*/
+
+
+  section#first_content {
+    padding-top:2%;
+
+    height:500px;
+    background-color: white;
+  }
+
+  section#first_content .slogan_first_content {
+    text-align:center;
+
+  }
+  section#first_content .slogan_first_content h2 {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size:2.6vw;
+  color:#333333;
+  line-height: 3vw;
+  letter-spacing:2px;
+
+  }
+
+
+  section#first_content .aims_block{
+    margin-top:6%;
+    text-align:center;
+  }
+
+  section#first_content .description_aim{
+    margin-top:4%;
+  }
+  section#first_content .description_aim p{
+    font-size:1.2vw;
+    color:#cccccc;
+  }
+  section#first_content .circle_image img{
+    width:130px;
+    height:130px;
+    border-radius:130px;
+  }
+
+/*_________________  Program section ________*/
+
+section#program_section{
+  background: #fff;
+    }
+.accordionWrapper{padding:30px;
+  background:#fff;
+  float:left;
+  width:80%;
+  box-sizing:border-box;
+  margin:10%;
+  box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);}
+.accordionItem{
+    float:left;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.accordionItemHeading{
+    cursor:pointer;
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    background:#1fb322;
+    color:#fff;
+    width:100%;
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+        box-sizing: border-box;
+}
+.close .accordionItemContent{
+    height:0px;
+    transition:height 1s ease-out;
+    -webkit-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+    float:left;
+    display:block;
+    opacity:0.7;
+
+
+}
+.open .accordionItemContent{
+        padding: 20px;
+    background-color: #fdfbfb;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    display:block;
+    -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+    -webkit-transform-origin: top;
+  -o-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -o-transition: -o-transform 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease;
+  transition: transform 0.4s ease;
+        box-sizing: border-box;
+}
+
+.open .accordionItemHeading{
+    margin:0px;
+        -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #1fb322;
+    color: white;
+}
+section#program_section .slogan_program {
+  text-align:center;
+
+}
+section#program_section .slogan_program h2{
+  text-align:center;
+  color:#333333;
+}
+
+section#program_section .accordionWrapper h2 {
+  font-size:2.6vw;
+}
+section#program_section .accordionWrapper  p{
+  font-size:1.5vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*_____________ Review section ________*/
+
+section#review_section{
+  background:#fadce9;
+  height:600px;
+}
+section#review_section .row_review{
+  margin-top:3%;
+}
+section#review_section .image_review {
+  height:150px;
+  width:150px;
+
+  border-radius:150px;
+
+}
+section#review_section h2{
+  color:#5738d2;
+}
+section#review_section h4{
+  font-family: 'Poppins', sans-serif;
+  font-size:2vw;
+  color:#1c1b20;
+}
+
+
+
+/*______________ FORM SECTION _________________*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+section#form_section{
+  background:white;
+  background-size: cover;
+  height:700px;
+}
+section#form_section .slogan_form{
+  text-align:center;
+}
+
+
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  padding-top:0px;
+}
+
+#form-div {
+  text-align:center;
+  background-color:#f1f0f0;
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  width: 50%;
+  position: absolute;
+  margin-top:30px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input ,select{
+  color:#3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus ,select:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #99cc99;
+  color: #333333;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#99cc99 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name, #phone, #email, #level {
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#name{background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);}
+
+
+#phone{background-image: url(../img/phone.png);}
+
+#email{background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);}
+
+#level{background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);}
+
+
+
+
+
+#button-blue{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #99cc99;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+  background-color: white;
+  color: #99cc99;
+}
+
+.submit:hover {
+  color: #3498db;
+}
+
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+
+
+
+/*___________ Profile Section __________*/
+
+section#profile_section {
+  height:550px;
+  background:white;
+  padding-top:5%;
+}
+section#profile_section .image_profile{
+
+}
+section#profile_section .image_profile img{
+   height:400px;
+  width:400px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius:400px;
+  border:1px solid black;
+}
+
+
+section#profile_section .description_profile{
+  margin-top:12%;
+}
+section#profile_section .description_profile h3{
+  font-size:2vw;
+}
+section#profile_section .description_profile q {
+    font-family: 'Montserrat', sans-serif; /* Шрифт с засечками */
+    color: #333333; /* Синий цвет текста */
+    quotes: "\0022" "\0022"; /* Кавычки в виде двойных угловых скобок */
+   }
+
+
+  /*___________FOOTER____________*/
+
+
+  section#contacts_section{
+
+  background-color:white;
+  padding-bottom:2%;
+
+}
+section#contacts_section h3{
+  color:#333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size:2vw;
+}
+section#contacts_section p{
+  color:#cccccc;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1.2vw;
+}
+
+
+
+section#contacts_section #map {
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin-top:3%;
+}
+section#contacts_section .follow{
+  margin-top:1%;
+}
+section#contacts_section .follow i{
+
+  color:#1c1b20;
+  font-size: 2.3em;
+}
+section#contacts_section .follow a{
+
+  text-decoration: none;
+}
+
+section#contacts_section .follow i:nth-child(1){
+  margin-right:3%;
+  margin-left:3%;
+
+}
+
+section#contacts_section .follow i:hover{
+  color:#99cc99;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
