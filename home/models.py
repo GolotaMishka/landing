@@ -1,4 +1,5 @@
 from django.db import models
+from utils.main import disable_for_loaddata
 
 
 class Subscriber(models.Model):
@@ -13,4 +14,6 @@ class Subscriber(models.Model):
     class Meta:
         verbose_name = 'MySubscriber'
         verbose_name_plural = 'A lot of Subscribers'
+
+@disable_for_loaddata
 
