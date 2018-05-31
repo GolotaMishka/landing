@@ -1,5 +1,5 @@
 DEBUG = False
-ALLOWED_HOSTS = ['178.62.54.171']
+ALLOWED_HOSTS = ['*']
 
 #settings for db on server
 DATABASES = {
