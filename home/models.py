@@ -15,5 +15,5 @@ class Subscriber(models.Model):
         verbose_name = 'MySubscriber'
         verbose_name_plural = 'A lot of Subscribers'
 
-@disable_for_loaddata
+
 
