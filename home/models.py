@@ -3,7 +3,6 @@ from utils.main import disable_for_loaddata
 
 
 class Subscriber(models.Model):
-    email = models.EmailField()
     name = models.CharField(max_length=128,default='name')
     phone_number = models.CharField(max_length=12,default='number')
     level = models.CharField(max_length=128,default='level')
