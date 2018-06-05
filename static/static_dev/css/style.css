@@ -63,7 +63,7 @@ header {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-  height: 700px;
+  height: 100%;
 
 
 }
@@ -184,7 +184,7 @@ header {
   /*______________ ABOUT PROGRAM _________*/
 
 section#about_program{
-  height:420px;
+  height:100%;
 }
 section#about_program .info{
   padding-top:12%;
@@ -205,7 +205,7 @@ section#about_program .info h4{
   section#first_content {
     padding-top:2%;
 
-    height:500px;
+    height:100%;
     background-color: white;
   }
 
@@ -251,7 +251,7 @@ section#about_program .info h4{
 
 section#program_section{
   background: #fff;
-  height:650px;
+  height:100%;
 }
 
 
@@ -354,7 +354,7 @@ section#program_section a {
 /*______________ COST _________________*/
 
 section#cost {
-  height:700px;
+  height:100%;
 }
 section#cost .cost_block{
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -389,7 +389,7 @@ section#cost .green_text span{
 
 section#review_section{
   background:white;
-  height:600px;
+  height:100%;
 }
 section#review_section .row_review{
   margin-top:5%;
@@ -414,7 +414,7 @@ section#review_section a{
 
 section#review_section_min{
   background:white;
-  height:600px;
+  height:100%;
 }
 section#review_section_min .row_review_min{
   margin-top:3%;
@@ -437,7 +437,7 @@ section#review_section_min a{
 }
 
 section#review_section_min .review_row{
-  margin-top:2%;
+  margin-bottom:4%;
 }
 /*______________ FORM SECTION _________________*/
 
@@ -447,7 +447,7 @@ section#review_section_min .review_row{
 section#form_section{
   background:white;
   background-size: cover;
-  height:924px;
+  height:100%;
 }
 section#form_section .slogan_form{
   text-align:center;
@@ -587,7 +587,7 @@ section#form_section .slogan_form{
 /*___________ Profile Section __________*/
 
 section#profile_section {
-  height:900px;
+  height:100%;
   background:white;
 }
 section#profile_section .image_profile{
@@ -617,7 +617,8 @@ section#profile_section .description_profile q {
 
 
 section#profile_section_min {
-  height:900px;
+  height:100%;
+  margin-bottom:10%;
   background:white;
 }
 section#profile_section_min .image_profile_min{
@@ -638,7 +639,8 @@ section#profile_section_min .description_profile_min{
   margin-top:10%;
 }
 section#profile_section_min .description_profile_min h3{
-  font-size:2vw;
+    font-size: 2.6vw;
+    line-height: 3.3vw;
 }
 section#profile_section_min .description_profile_min q {
     color: #333333; /* Синий цвет текста */
@@ -746,7 +748,10 @@ section#about_program .info h4{
   letter-spacing:1px;
 }
 
-section#first_content {height: 815px;}
+section#first_content {
+  height: 100%;
+  margin-bottom:10%;
+  }
 section#first_content .slogan_first_content h2 {
     font-size: 6vw;
 }
@@ -774,7 +779,10 @@ section#program_section .accordion {
     border-radius: 4px;
 }
 
-section#program_section{height:400px;}
+section#program_section{
+  height:100%;
+  margin-bottom:10%;
+  }
  section#program_section .accordion .link {
     cursor: pointer;
     display: block;
@@ -799,7 +807,8 @@ section#program_section{height:400px;}
 
 
 section#cost {
-  height:400px;
+  height:100%;
+  margin-bottom:10%;
 }
 section#cost .cost_block{
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -831,7 +840,10 @@ section#cost .green_text span{
 }
 
 
-section#profile_section_min{height:450px;}
+section#profile_section_min{
+height:100%;
+  margin-bottom:10%;
+  }
 section#profile_section_min .image_profile_min {
   padding-top:10%;
 }
@@ -848,19 +860,19 @@ section#review_section_min a {
     font-size: 6vw;
 }
 section#review_section_min p {
-    font-size: 3.8vw;
+    font-size: 2.8vw;
 
 }
 
 section#review_section_min {
-
-    height: 1375px;
+  height:100%;
+  margin-bottom:10%;
 }
 
 
 section#form_section {
-
-    height: 260px;
+    height:100%;
+  margin-bottom:10%;
 }
 section#form_section h2{
   font-size:6vw;
@@ -913,7 +925,9 @@ section#form_section h2{
 .ease{
   height:0%;
 }
-
+section#contacts_section{
+  margin-top:70%;
+}
 
 section#contacts_section h3{
   font-size:4vw;
@@ -948,17 +962,18 @@ section#contacts_section .follow i{
     padding:1%;
 }
 header{
-  height:235px;
+  height:100%;
   margin-top:10%;
-
+  padding-bottom:8%;
 }
 header h1{
-  font-size: 4vw;
-  letter-spacing: 2px;
+  font-size: 6vw;
+    letter-spacing: 4px;
+    line-height: 5.7vw;
   }
 header .header_button{
-  padding:2%;
-  font-size:2.2vw;
+  padding:0%;
+  font-size:3.2vw;
   letter-spacing:1px;
 }
 
@@ -970,7 +985,10 @@ section#about_program .info h4{
   letter-spacing:1px;
 }
 
-section#first_content{height:1000px;}
+section#first_content{
+  height: 100%;
+  margin-bottom:10%;
+}
 
 section#first_content .slogan_first_content h2 {
     font-size: 6vw;
@@ -998,7 +1016,8 @@ section#program_section .accordion {
 }
 
 section#program_section{
-  height:450px;
+  height: 100%;
+  margin-bottom:10%;
 }
  section#program_section .accordion .link {
     cursor: pointer;
@@ -1011,7 +1030,8 @@ section#program_section{
 
 
 section#cost {
-  height:400px;
+  height: 100%;
+  margin-bottom:10%;
 }
 section#cost .cost_block{
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -1056,7 +1076,10 @@ section#cost .green_text span{
 }
 
 
-section#profile_section_min{height:638px;}
+section#profile_section_min{
+  height: 100%;
+  margin-bottom:10%;
+}
 section#profile_section_min .image_profile_min {
   padding-top:10%;
 }
@@ -1073,19 +1096,19 @@ section#review_section_min a {
     font-size: 6vw;
 }
 section#review_section_min p {
-    font-size: 3.8vw;
+    font-size: 2.8vw;
 
 }
 
 section#review_section_min {
-
-    height: 1980px;
+   height: 100%;
+  margin-bottom:10%;
 }
 
 
 section#form_section {
-
-    height: 300px;
+    height: 100%;
+  margin-bottom:10%;
 }
 section#form_section h2{
   font-size:5vw;
@@ -1139,7 +1162,9 @@ section#form_section h2{
   height:0%;
 }
 
-
+section#contacts_section{
+  margin-top:60%;
+}
 section#contacts_section h3{
   font-size:4.4vw;
 }
@@ -1164,8 +1189,8 @@ section#contacts_section .follow i{
 .navbar-default .nav li a {
     letter-spacing: 1px;
     color: #333333;
-    font-size:3vw;
-    padding:2%;
+    font-size:2vw;
+    padding:1%;
 }
 header{
   height:400px;
@@ -1182,14 +1207,20 @@ header .header_button{
   letter-spacing:1px;
 }
 
-section#about_program{height:350px;}
+section#about_program{
+  height:100%;
+  margin-bottom:10%;
+}
 section#about_program .info h4{
   font-size:4.6vw;
   line-height:5.6vw;
   letter-spacing:1px;
 }
 
-section#first_content{height:1180px;}
+section#first_content{
+  height:100%;
+  margin-top:10%;
+  }
 
 section#first_content .slogan_first_content h2 {
     font-size: 5vw;
@@ -1217,7 +1248,8 @@ section#program_section .accordion {
 }
 
 section#program_section{
-  height:560px;
+  height:100%;
+  margin-top:10%;
 }
  section#program_section .accordion .link {
     cursor: pointer;
@@ -1242,7 +1274,8 @@ section#program_section{
 
 
 section#cost {
-  height:530px;
+  height:100%;
+  margin-top:10%;
 }
 section#cost .cost_block{
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -1273,7 +1306,10 @@ section#cost .green_text span{
   font-size:2vw;
 }
 
-section#profile_section_min{height:790px;}
+section#profile_section_min{
+  height:100%;
+  margin-top:10%;
+}
 section#profile_section_min .image_profile_min {
   padding-top:10%;
 }
@@ -1295,14 +1331,14 @@ section#review_section_min p {
 }
 
 section#review_section_min {
-
-    height: 2165px;
+    height:100%;
+    margin-top:10%;
 }
 
 
 section#form_section {
-
-    height: 445px;
+    height:100%;
+  margin-top:10%;
 }
 section#form_section h2{
   font-size:5vw;
@@ -1323,7 +1359,7 @@ section#form_section h2{
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 3.1vw;
+    font-size: 2.4vw;
     border-radius: 0;
     line-height: 19px;
     background-color: #fbfbfb;
@@ -1356,7 +1392,9 @@ section#form_section h2{
   height:0%;
 }
 
-
+section#contacts_section{
+  margin-top:50%;
+}
 section#contacts_section h3{
   font-size:4vw;
 }
@@ -1399,14 +1437,20 @@ header .header_button{
   letter-spacing:1px;
 }
 
-section#about_program{height:400px;}
+section#about_program{
+  height:100%;
+  margin-bottom:10%;
+  }
 section#about_program .info h4{
   font-size:3.8vw;
   line-height:5.6vw;
   letter-spacing:1px;
 }
 
-section#first_content{height:1380px;}
+section#first_content{
+  height:100%;
+  margin-bottom:10%;
+}
 
 section#first_content .slogan_first_content h2 {
     font-size: 4vw;
@@ -1434,7 +1478,8 @@ section#program_section .accordion {
 }
 
 section#program_section{
-  height:610px;
+  height:100%;
+  margin-bottom:10%;
 }
  section#program_section .accordion .link {
     cursor: pointer;
@@ -1459,12 +1504,16 @@ section#program_section{
 
 
 section#cost {
-    height: 600px;
+  height:100%;
+  margin-bottom:10%;
 }
 
 
 
-section#profile_section{height:1900px;}
+section#profile_section{
+  height:100%;
+  margin-bottom:10%;
+}
 section#profile_section .image_profile {
   padding-top:34%;
 }
@@ -1486,13 +1535,14 @@ section#review_section_min p {
 }
 
 section#review_section_min {
-    height: 2720px;
+  height:100%;
+  margin-bottom:10%;
 }
 
 
 section#form_section {
-
-    height: 480px;
+    height:100%;
+  margin-bottom:10%;
 }
 section#form_section h2{
   font-size:4vw;
@@ -1546,7 +1596,9 @@ section#form_section h2{
   height:0%;
 }
 
-
+section#contacts_section{
+  margin-top:45%;
+}
 section#contacts_section h3{
   font-size:3.2vw;
 }
@@ -1615,14 +1667,20 @@ header .header_button{
   letter-spacing:1px;
 }
 
-section#about_program{height:430px;}
+section#about_program{
+  height:100%;
+  margin-bottom:10%;
+  }
 section#about_program .info h4{
   font-size:3.4vw;
   line-height:5.6vw;
   letter-spacing:1px;
 }
 
-section#first_content{height:540px;}
+section#first_content{
+height:100%;
+  margin-bottom:10%;
+}
 
 section#first_content .slogan_first_content h2 {
     font-size: 3.8vw;
@@ -1650,7 +1708,8 @@ section#program_section .accordion {
 }
 
 section#program_section{
-  height:720px;
+  height:100%;
+  margin-bottom:10%;
 }
  section#program_section .accordion .link {
     cursor: pointer;
@@ -1675,7 +1734,8 @@ section#program_section{
 
 
 section#cost {
-  height:560px;
+  height:100%;
+  margin-bottom:5%;
 }
 section#cost .cost_block{
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -1709,7 +1769,10 @@ section#cost .green_text span{
 
 
 
-section#profile_section{height:700px;}
+section#profile_section{
+height:100%;
+  margin-bottom:10%;
+}
 section#profile_section .image_profile {
   padding-top:34%;
 }
@@ -1736,14 +1799,14 @@ section#review_section p {
 }
 
 section#review_section {
-
-    height: 650px;
+  height:100%;
+  margin-bottom:10%;
 }
 
 
 section#form_section {
-
-    height:700px;
+  height:100%;
+  margin-bottom:10%;
 }
 section#form_section h2{
   font-size:4vw;
@@ -1764,7 +1827,7 @@ section#form_section h2{
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 2.4vw;
+    font-size: 2vw;
     border-radius: 0;
     line-height: 19px;
     background-color: #fbfbfb;
@@ -1797,12 +1860,15 @@ section#form_section h2{
   height:0%;
 }
 
+section#contacts_section{
+  margin-top:45%;
+}
 
 section#contacts_section h3{
-  font-size:3vw;
+  font-size:2.8vw;
 }
 section#contacts_section p{
-  font-size:2vw;
+  font-size:1.8vw;
 }
 section#contacts_section .follow i{
   font-size:1.7em;
@@ -1810,13 +1876,6 @@ section#contacts_section .follow i{
 
 
 }
-
-
-
-
-
-
-
 
 
 @media(min-width:1100px) and (max-width:1200px){
@@ -1866,14 +1925,20 @@ header .header_button{
   letter-spacing:1px;
 }
 
-section#about_program{height:430px;}
+section#about_program{
+  height:100%;
+  margin-bottom:10%;
+}
 section#about_program .info h4{
   font-size:3.4vw;
   line-height:5.6vw;
   letter-spacing:1px;
 }
 
-section#first_content{height:540px;}
+section#first_content{
+  height:100%;
+  margin-bottom:10%;
+}
 
 section#first_content .slogan_first_content h2 {
     font-size: 3.8vw;
@@ -1901,7 +1966,8 @@ section#program_section .accordion {
 }
 
 section#program_section{
-  height:720px;
+  height:100%;
+  margin-bottom:10%;
 }
  section#program_section .accordion .link {
     cursor: pointer;
@@ -1926,12 +1992,16 @@ section#program_section{
 
 
 section#cost {
-    height: 530px;
+  height:100%;
+  margin-bottom:3%;
 }
 
 
 
-section#profile_section{height:800px;}
+section#profile_section{
+  height:100%;
+  margin-bottom:10%;
+}
 section#profile_section .image_profile {
   padding-top:34%;
 }
@@ -1956,14 +2026,14 @@ section#review_section p {
 }
 
 section#review_section {
-
-    height: 700px;
+  height:100%;
+  margin-bottom:10%;
 }
 
 
 section#form_section {
-
-    height: 770px;
+  height:100%;
+  margin-bottom:10%;
 }
 section#form_section h2{
   font-size:4vw;
@@ -1984,7 +2054,7 @@ section#form_section h2{
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 2.4vw;
+    font-size: 1.6vw;
     border-radius: 0;
     line-height: 19px;
     background-color: #fbfbfb;
@@ -1999,7 +2069,7 @@ section#form_section h2{
 #button-blue {
     float: inherit;
     width: 50%;
-    font-size: 2.5vw;
+    font-size: 2vw;
     padding-top: 9px;
     padding-bottom: 9px;
     -webkit-transition: all 0.3s;
@@ -2017,12 +2087,14 @@ section#form_section h2{
   height:0%;
 }
 
-
+section#contacts_section{
+  margin-top:40%;
+}
 section#contacts_section h3{
-  font-size:3vw;
+  font-size:2.8vw;
 }
 section#contacts_section p{
-  font-size:2vw;
+  font-size:1.5vw;
 }
 section#contacts_section .follow i{
   font-size:1.5em;
@@ -2076,14 +2148,20 @@ header h1{
   }
 header .header_button{margin-top: 8%;}
 
-section#about_program{height:450px;}
+section#about_program{
+  height:100%;
+  margin-bottom:10%;
+}
 section#about_program .info h4{
   font-size:3vw;
   line-height:4.6vw;
   letter-spacing:1px;
 }
 
-section#first_content{height:540px;}
+section#first_content{
+  height:100%;
+  margin-bottom:10%;
+}
 
 section#first_content .slogan_first_content h2 {
     font-size: 3.2vw;
@@ -2111,7 +2189,8 @@ section#program_section .accordion {
 }
 
 section#program_section{
-  height:660px;
+  height:100%;
+  margin-bottom:10%;
 }
  section#program_section .accordion .link {
     cursor: pointer;
@@ -2136,12 +2215,16 @@ section#program_section{
 
 
 section#cost {
-    height: 570px;
+  height:100%;
+  margin-bottom:0%;
 }
 
 
 
-section#profile_section{height:890px;}
+section#profile_section{
+  height:100%;
+  margin-bottom:10%;
+}
 section#profile_section .image_profile {
   padding-top:34%;
 }
@@ -2165,11 +2248,14 @@ section#review_section p {
 
 }
 
-section#review_section {height: 700px;}
+section#review_section {
+  height:100%;
+  margin-bottom:10%;
+}
 
 section#form_section {
-
-    height: 650px;
+  height:100%;
+  margin-bottom:10%;
 }
 section#form_section h2{
   font-size:4vw;
@@ -2190,7 +2276,7 @@ section#form_section h2{
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 2.4vw;
+    font-size: 1.4vw;
     border-radius: 0;
     line-height: 19px;
     background-color: #fbfbfb;
@@ -2205,7 +2291,7 @@ section#form_section h2{
 #button-blue {
     float: inherit;
     width: 50%;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     padding-top: 9px;
     padding-bottom: 9px;
     -webkit-transition: all 0.3s;
@@ -2223,12 +2309,14 @@ section#form_section h2{
   height:0%;
 }
 
-
+section#contacts_section {
+  margin-top:35%;
+}
 section#contacts_section h3{
-  font-size:3.2vw;
+  font-size:2.5vw;
 }
 section#contacts_section p{
-  font-size:2.2vw;
+  font-size:1.2vw;
 }
 section#contacts_section .follow i{
   font-size:1.5em;
