@@ -6,9 +6,9 @@ class SubscriberAdmin (admin.ModelAdmin):
 
     list_display = [field.name for field in Subscriber._meta.fields]
     list_filter = ['name','level']
-    search_fields = ['name', 'email']
+    search_fields = ['name']
 
-    fields = ["email","name","phone_number","level"]
+    fields = ["name","phone_number","level"]
 
     # exclude = ["email"]
 	# inlines = [FieldMappingInline]
