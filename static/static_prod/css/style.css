@@ -1741,7 +1741,10 @@ section#review_section {
 }
 
 
+section#form_section {
 
+    height:700px;
+}
 section#form_section h2{
   font-size:4vw;
   letter-spacing:2px;
@@ -2166,7 +2169,7 @@ section#review_section {height: 700px;}
 
 section#form_section {
 
-    height: 440px;
+    height: 650px;
 }
 section#form_section h2{
   font-size:4vw;
