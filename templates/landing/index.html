@@ -441,7 +441,7 @@
     <div class="row">
       <div class="col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
          <a href="https://www.instagram.com/finik_bubka/"><div class="image_review_min">
-          <img src=""{% static 'img/dasha.jpg' %}"" alt="">
+          <img src="{% static 'img/dasha.jpg' %}" alt="">
         </div></a>
       </div>
       <div class="col-sm-5  col-xs-5 ">
@@ -490,23 +490,18 @@
       <div class="col-lg-12 col-md-12 col-xs-12 col-lg-offset-3 col-md-offset-3 col-xs-offset-3  text-center ">
         <div id="form-main">
           <div id="form-div">
-            <form class="form formValidation" id="form1">
+            <form action="" method="post" class="form formValidation" id="form1">{% csrf_token %}
 
               <p class="name">
-                <input name="name" type="text" autocomplete="off" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
+                <input name="{{ form.name.name }}" type="text" autocomplete="off" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
               </p>
 
                <p class="phone">
-                <input name="phone" type="text" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
+                <input name="{{ form.phone_number.name }}" type="text" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
               </p>
 
-              <!--<p class="email">
-                <input name="email" type="email" autocomplete="off" class="validate[required,custom[email]] feedback-input inputValidation" id="email" placeholder="Email" />
-              </p>-->
-
-
               <p class="text">
-                <select name="text" class="inputValidation" id="level" >
+                <select name="{{ form.level.name }}" class="inputValidation" id="level" >
                   <option  class=" feedback-input" disabled selected>Уровень знаний</option>
                   <option class=" feedback-input"  value="Intermediate">Intermediate</option>
                   <option class=" feedback-input" value="Upper-Intermediateate">Upper-Intermediateate</option>
