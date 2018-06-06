@@ -192,7 +192,7 @@ section#about_program .info{
 }
 section#about_program .info h4{
   text-align:center;
-  font-family: 'AvenirNext-Regular', serif;
+  font-family: '11851', sans-serif;
   font-size:3vw;
   color:#333333;
   line-height: 4vw;
@@ -732,13 +732,18 @@ header{
 
 }
 header h1{
-  font-size: 4vw;
+  font-size: 5.5vw;
   letter-spacing: 2px;
   }
 header .header_button{
+  margin-top:20%;
   padding:2%;
-  font-size:3vw;
+  font-size:3.7vw;
   letter-spacing:1px;
+}
+
+header .slogan {
+    margin-top: 15%;
 }
 
 section#about_program{height:190px;}
@@ -788,17 +793,17 @@ section#program_section{
     display: block;
     padding:12px 15px 15px 15px;
     color: #4D4D4D;
-    font-size: 3.4vw;
+    font-size: 4.4vw;
 }
 .accordion li i {
 
-    top: 16px;
+    top: 20px;
     left: 0px;
     font-size: 2.7vw;
 
 }
 .submenu {
-    font-size: 8px;
+    font-size: 11px;
 }
 .submenu a {
     padding: 4px;
@@ -881,9 +886,9 @@ section#form_section h2{
 
 #form-div {
 
-    left: 0%;
+    left: -10%;
     margin-right: 0%;
-    width: 50%;
+    width: 70%;
     margin-left: 0;
     padding-left: 2%;
     padding-right: 3%;
@@ -893,7 +898,7 @@ section#form_section h2{
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 3.1vw;
+    font-size: 4.6vw;
     border-radius: 0;
     line-height: 19px;
     background-color: #fbfbfb;
@@ -930,13 +935,13 @@ section#contacts_section{
 }
 
 section#contacts_section h3{
-  font-size:4vw;
+  font-size:5vw;
 }
 section#contacts_section p{
-  font-size:3.2vw;
+  font-size:3.8vw;
 }
 section#contacts_section .follow i{
-  font-size:1.3em;
+  font-size:2em;
 }
 }
 
@@ -969,18 +974,23 @@ header{
 header h1{
   font-size: 6vw;
     letter-spacing: 4px;
-    line-height: 5.7vw;
+    line-height: 5.2vw;
   }
 header .header_button{
+  margin-top: 31%;
   padding:0%;
   font-size:3.2vw;
   letter-spacing:1px;
 }
+header .slogan {
+    margin-top: 16%;
+}
+
 
 header .header_button a {padding: 2.3% 2.3%;}
 section#about_program{height:250px;}
 section#about_program .info h4{
-  font-size:5vw;
+  font-size:5.2vw;
   line-height:5.6vw;
   letter-spacing:1px;
 }
@@ -1024,7 +1034,7 @@ section#program_section{
     display: block;
     padding:12px 15px 15px 14px;
     color: #4D4D4D;
-    font-size: 3.6vw;
+    font-size: 4.4vw;
 }
 
 
@@ -1117,9 +1127,9 @@ section#form_section h2{
 
 #form-div {
 
-    left: 0%;
+    left: -8%;
     margin-right: 0%;
-    width: 50%;
+    width: 68%;
     margin-left: 0;
     padding-left: 2%;
     padding-right: 3%;
@@ -1129,7 +1139,7 @@ section#form_section h2{
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 3.1vw;
+    font-size: 4vw;
     border-radius: 0;
     line-height: 19px;
     background-color: #fbfbfb;
@@ -1172,7 +1182,7 @@ section#contacts_section p{
   font-size:3.2vw;
 }
 section#contacts_section .follow i{
-  font-size:1.3em;
+  font-size:2em;
 }
 }
 
