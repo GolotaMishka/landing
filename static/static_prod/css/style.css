@@ -76,7 +76,7 @@ header {
 }
 .header_button {
   text-align:center;
-  margin-top:2%;
+  margin-top:6%;
 }
 .header_button a {
   text-decoration: none;
@@ -977,7 +977,7 @@ header h1{
     line-height: 5.2vw;
   }
 header .header_button{
-  margin-top: 31%;
+  margin-top: 25%;
   padding:0%;
   font-size:3.2vw;
   letter-spacing:1px;
@@ -2116,7 +2116,7 @@ section#contacts_section .follow i{
 
 
 
-@media(min-width:1201px) and (max-width:1400px){
+@media(min-width:1201px) and (max-width:1600px){
  .navbar-default .nav li a {
 
 
@@ -2153,7 +2153,7 @@ header{
 
 }
 header h1{
-  font-size: 3.3vw;
+  font-size: 3.8vw;
   letter-spacing: 2px;
   }
 header .header_button{margin-top: 8%;}
