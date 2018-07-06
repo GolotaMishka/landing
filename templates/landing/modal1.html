@@ -1,0 +1,654 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Face-to-face</title>
+
+    <!-- Styles -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+
+  </head>
+
+
+<body>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 text-center">
+        <div id="modal_form" class="text-center"><!-- Сaмo oкнo -->
+            <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+            <div class="successful">Жди звонка!</div>
+            <!-- Тут любoе сoдержимoе -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div id="overlay"></div><!-- Пoдлoжкa -->
+
+
+<section id="menu">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+      <div class="container-fluid">
+       <div class="row">
+         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" page-scroll>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#first_content">Зачем?</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#program_section">Как?</a>
+                    </li>
+                     <li class="">
+                        <a class="page-scroll" href="#cost">Цена</a>
+                    </li>
+
+                    <li class="">
+                        <a class="page-scroll" href="#prof">Обо мне</a>
+                    </li>
+
+                    <li class="">
+                        <a class="page-scroll" href="#rev">Отзывы</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#form_section">Подать заявку</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+       </div>
+      </div>
+  </nav>
+</section>
+
+<header >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+        <div class="slogan">
+          <h1>Хватит платить за время, пока репетитор сидит и смотрит, а ты выполняешь упражнения</h1>
+        </div>
+
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4" >
+        <div class="header_button">
+          <a href="#form_section">Подать заявку</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section id="about_program">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+        <div class="info">
+          <h4>Все мои задания ты будешь выполнять дома. Во время наших встреч или скайп-колов мы будем работать только над твоей речью, произношением и проверкой самостоятельной работы. </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="first_content">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12  col-xs-12">
+       <div class="slogan_first_content">
+         <h2>Курс для тебя, если:</h2>
+       </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-3   text-center aims_block wow bounceInLeft" data-wow-duration:"3s" >
+       <div class="circle_image">
+        <img src="{% static 'img/classroom.png' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>
+          Говоришь с ошибками, <br>
+          хочешь улучшить произношение
+        </p>
+
+       </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3    text-center aims_block wow bounceInLeft" data-wow-duration:"3s">
+       <div class="circle_image">
+         <img src="{% static 'img/clock.png' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>Путаешь времена</p>
+
+       </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3    text-center aims_block wow bounceInRight" data-wow-duration:"3s">
+       <div class="circle_image">
+         <img src="{% static 'img/books.png' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>
+          Стараешься учить новые слова,<br>
+           но ничего не получается
+        </p>
+
+       </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3    text-center aims_block wow bounceInRight" data-wow-duration:"3s">
+       <div class="circle_image">
+         <img src="{% static 'img/calendar.png' %}" alt="">
+       </div>
+       <div class="description_aim">
+        <p>
+           Готов/а интенсивно работать <br>на протяжении месяца
+        </p>
+
+       </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="program_section">
+
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+        <div class="slogan_program">
+
+          <h2>Программа курса</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12  ">
+        <ul id="accordion" class="accordion">
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Стратегический Meeting – 1 час<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Наша первая встреча. Понимаем твои слабые места в английском, ставим задачи на курс. Учимся выжимать из каждого последующего задания курса максимальный результат.</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Listening – 14 часов <i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Учимся воспринимать английский на слух.  Понимаем сериалы без субтитров – и британские, и американские!</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Reading – 45 000 слов<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Даём мозгу увидеть уже знакомые слова и грамматические конструкции в текстах. Прочитываем целую книгу на английском и учим вокабуляр из неё.</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Writing – 2 000 слов<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Красиво выражаем мысли на бумаге. Делаем обзоры-рецензии фильмов и книг. В конце курса ты наконец-то сможешь написать грамотный пост в Facebook на английском.</a></li>
+
+            </ul>
+          </li>
+
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Grammar – 40 упражнений<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Строим приятные слуху предложения. Понимаем разницу между Past Simple и Present Perfect и всеми четырьмя Conditionals.</a></li>
+
+            </ul>
+          </li>
+
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Speaking – 9 часов<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Чистим речь от ошибок. Наполняемся новыми словами и выражениями, работаем над произношением. Больше не боимся разговоров с американцами. </a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+</section>
+
+<section id="cost">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 text-center cost_block" >
+        <div class="row">
+        </div>
+        <div class="row cost_rows">
+          <div class="col-lg-12 main_text">
+            <h2>Интенсив на месяц</h2>
+          </div>
+        </div>
+        <div class="row cost_rows green">
+          <div class="col-lg-12 green_text">
+            <h2>3450<span>грн/курс</span></h2>
+          </div>
+        </div>
+        <div class="row cost_rows">
+          <div class="col-lg-12 normal_text">
+            <h2>Индивидуальные занятия</h2>
+          </div>
+        </div>
+        <div class="row cost_rows">
+          <div class="col-lg-12 normal_text">
+            <h2>80% заданий вы выполняете дома</h2>
+          </div>
+        </div>
+        <div class="row cost_rows">
+          <div class="col-lg-12 normal_text">
+            <h2>Встреча 3 раза в неделю по 40 минут</h2>
+          </div>
+        </div>
+        <div class="row cost_rows">
+          <div class="col-lg-12 normal_text">
+            <h2>Оплата частями - 850 грн/неделя!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="slider">
+  <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6  text-center">
+                            <div class="slide_img ">
+                              <img src="{% static 'img/slide1.jpg' %}">
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6  text-left">
+                            <div class="slide_description">
+                              <h4>Меня зовут Маша и в прошлом я HR. Поэтому понимание, как сделать так, чтобы твой мозг не ленился, а мотивация била ключём у меня в крови. Как, кстати, и английский – я была в 41 стране, включая США и Англии. А в последней даже училась.</h4>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div><!-- /Slide1 -->
+                    <div class="item">
+
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6  text-center">
+                            <div class="slide_img">
+                              <img src="{% static 'img/slide2.jpg' %}">
+                            </div>
+                          </div>
+                          <div class="col-lg-6 text-left">
+                            <div class="slide_description">
+                              <h4>Привет, я Лёша и я только что вернулся из Китая, где преподавал английский. Да, каждый год я уезжаю в другие страны и живу там, пока не надоест. Поэтому отлично понимаю все сложности изучения нового языка и научу с ними справляться.</h4>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div><!-- /Slide2 -->
+                    <div class="item">
+
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6  text-left">
+                            <div class="slide_img">
+                              <img src="{% static 'img/slide3.jpg' %}">
+                            </div>
+                          </div>
+                          <div class="col-lg-6  col-md-6  text-left">
+                            <div class="slide_description">
+                              <h4>Меня зовут Настя и я уже три года преподаю взрослым клиентам из 12 разных стран. Поэтому знаю о редукции акцентов наверно уже всё. Сделаю тебя fluent in English.</h4>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div><!-- /Slide3 -->
+                    <div class="item">
+
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6  text-center">
+                            <div class="slide_img">
+                              <img src="{% static 'img/slide4.jpg' %}">
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6  text-left">
+                            <div class="slide_description">
+                              <h4>Привет, я Саша и я жил в США. Подтянем английский так, что и твоя Америка будет не за горами. Важное условие: домашнее задание придётся выполнять идеально.</h4>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div><!-- /Slide4 -->
+                </div>
+
+                <div class="control-box">
+                    <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+                    <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+                </div><!-- /.control-box -->
+
+            </div><!-- /#myCarousel -->
+
+        </div><!-- /.span12 -->
+      </div><!-- /.row -->
+  </div><!-- /.container -->
+
+
+</section>
+
+<div id="rev">
+  <section id="review_section">
+    <div class="container-fluid">
+      <div class="row review_row">
+        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 text-center">
+          <a href="https://www.instagram.com/jekaman_/"><div class="image_review">
+            <img src="{% static 'img/evgeniy.JPG' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-lg-3 col-md-3 ">
+          <div class="review_coment">
+            <h4><a href="https://www.instagram.com/jekaman_/">Евгений Кузьмин</a></h4>
+            <p>
+              Спустя несколько уроков, могу пересказать прочитанные главы <br>
+              из книги на английском, и написать эссе своими словами <br>
+              из 200-х слов, без словаря и переводчика. <br>
+              Метод преподавания Алины - удивителен и увлекателен.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 text-center">
+          <a href="https://www.instagram.com/faenkova/"><div class="image_review">
+            <img src="{% static 'img/evgeniya.png' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="review_coment">
+            <h4><a href="https://www.instagram.com/faenkova/">Женя Фаенкова</a></h4>
+            <p>
+              Алиночка, ты просто чудо и находка 🙈 Спасибо тебе за твои уроки! <br>
+               Ты очень доступно все даёшь! Я с радостью <br>
+               прихожу на твои занятия, а как бонус ещё и перестала <br>
+               все через переводчик гонять
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row review_row">
+        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 text-center">
+          <a href="https://www.instagram.com/finik_bubka/"><div class="image_review">
+            <img src="{% static 'img/dasha.jpg' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="review_coment">
+            <h4><a href="https://www.instagram.com/finik_bubka/">Даша Эбадиан</a></h4>
+              <p> Абсолютно точно могу сказать, что английский Алины — лучший <br>
+             мой подарок себе в этом году. она ходячая мотивация! Про то, <br>
+             что вы будете репетировать произношение вслух, сидя в забитом кафе; <br>
+             слушать самые актуальные новости прямо на ходу; читать книги на <br>
+             оригинале, — я даже не говорю)) <br>
+             Прийдется много говорить и думать!<br>
+           </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 text-center">
+          <a href="https://www.instagram.com/blbrrs/"><div class="image_review">
+            <img src="{% static 'img/4.png' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="review_coment">
+            <h4><a href="https://www.instagram.com/blbrrs/">Алёна Гутварёва</a></h4>
+            <p>На занятиях  мой мозг работает на 200% -
+              по завершению  всегда ощущаю , что сильно
+              поработали. Погружаешься в обучение и время
+              пролетает очень быстро. Мне нравится, как она готовится
+                к каждому уроку , как  умеет быть строгой и не вестись
+                 на слабость😂 И ты понимаешь, что она права))
+                 Прислушиваешься к ее советам, пробуешь и получается.<br>
+         </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="review_section_min">
+    <div class="container-fluid">
+      <div class="row review_row">
+        <div class="col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+          <a href="https://www.instagram.com/jekaman_/"><div class="image_review_min">
+            <img src="{% static 'img/evgeniy.JPG' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-sm-5  col-xs-5 ">
+          <div class="review_coment_min">
+            <h4><a href="https://www.instagram.com/jekaman_/">Евгений Кузьмин</a></h4>
+            <p>
+              Спустя несколько уроков, могу пересказать прочитанные главы <br>
+              из книги на английском, и написать эссе своими словами <br>
+              из 200-х слов, без словаря и переводчика. <br>
+              Метод преподавания Алины - удивителен и увлекателен.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row review_row">
+        <div class="col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+          <a href="https://www.instagram.com/faenkova/"><div class="image_review_min">
+            <img src="{% static 'img/evgeniya.png' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-sm-5  col-xs-5 ">
+         <div class="review_coment_min">
+            <h4><a href="https://www.instagram.com/faenkova/">Женя Фаенкова</a></h4>
+            <p>
+              Алиночка, ты просто чудо и находка 🙈 Спасибо тебе за твои уроки! <br>
+               Ты очень доступно все даёшь! Я с радостью <br>
+               прихожу на твои занятия, а как бонус ещё и перестала <br>
+               все через переводчик гонять
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row review_row">
+        <div class="col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+           <a href="https://www.instagram.com/finik_bubka/"><div class="image_review_min">
+            <img src="{% static 'img/dasha.jpg' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-sm-5  col-xs-5 ">
+          <div class="review_coment_min">
+            <h4><a href="https://www.instagram.com/finik_bubka/">Даша Эбадиан</a></h4>
+             <p> Абсолютно точно могу сказать, что английский Алины — лучший <br>
+             мой подарок себе в этом году. она ходячая мотивация! Про то, <br>
+             что вы будете репетировать произношение вслух, сидя в забитом кафе; <br>
+             слушать самые актуальные новости прямо на ходу; читать книги на <br>
+             оригинале, — я даже не говорю)) <br>
+             Прийдется много говорить и думать!<br>
+           </p>
+          </div>
+        </div>
+      </div>
+      <div class="row review_row">
+        <div class="col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+           <a href="https://www.instagram.com/blbrrs/"><div class="image_review_min">
+            <img src="{% static 'img/4.png' %}" alt="">
+          </div></a>
+        </div>
+        <div class="col-sm-5  col-xs-5 ">
+          <div class="review_coment_min">
+             <h4><a href="https://www.instagram.com/blbrrs/">Алёна Гутварёва</a></h4>
+            <p>На занятиях  мой мозг работает на 200% -
+              по завершению  всегда ощущаю , что сильно
+              поработали. Погружаешься в обучение и время
+              пролетает очень быстро. Мне нравится, как она готовится
+                к каждому уроку , как  умеет быть строгой и не вестись
+                 на слабость😂 И ты понимаешь, что она права))
+                 Прислушиваешься к ее советам, пробуешь и получается.<br>
+         </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<section id="form_section">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="slogan_form">
+          <h2>Подать заявку</h2>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12 col-lg-offset-3 col-md-offset-3 col-xs-offset-3  text-center ">
+        <div id="form-main">
+          <div id="form-div">
+            <form action="" class="form formValidation" method="post" id="form1">{% csrf_token %}
+
+              <p class="name">
+                <input name="{{ form.name.name }}"  type="text" autocomplete="off" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
+              </p>
+
+               <p class="phone">
+                <input name="{{ form.phone_number.name }}" type="text" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
+              </p>
+
+
+              <p class="text">
+                <select name="{{ form.place.name }}" class="inputValidation" id="place" >
+                  <option  class=" feedback-input" disabled selected>Где мы видимся?</option>
+                  <option class=" feedback-input"  value="Kiev">Киев</option>
+                  <option class=" feedback-input" value="Kharkiv">Харьков</option>
+                  <option class=" feedback-input" value="Odessa">Одесса</option>
+                  <option class=" feedback-input" value="Skype">Skype</option>
+                </select>
+
+              </p>
+
+
+              <div class="submit">
+                <input type="submit" value="Отправить" id="button-blue"/>
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacts_section">
+    <div class="container-fluid">
+
+
+      <div class="row">
+        <div class=" col-lg-12 text-center">
+          <div class="qeustion">
+            <h3>Остались вопросы?</h3>
+            <p>Пиши мне в соцсетях</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-lg-12 follow text-center">
+          <a href="https://www.facebook.com/shychkina"><i class="fab fa-facebook-f" ></i>
+          </a>
+          <a href="https://t.me/shychkina"><i class="fab fa-telegram" ></i>
+          <a href="https://www.instagram.com/shychkina/"><i class="fab fa-instagram"></i>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/accordion.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/valideForm.js' %}"></script>
+<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+<script src="{% static 'js/slider.js' %}"></script>
+
+
+
+
+
+
+<script>
+    new WOW().init();
+</script>
+  </body>
+</html>

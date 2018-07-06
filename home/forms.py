@@ -6,6 +6,7 @@ class SubscriberForm(forms.ModelForm):
     name = forms.CharField(required=True)
     phone_number = forms.CharField(required=True)
     level = forms.CharField(required=True)
+    place = forms.CharField(required=True)
     
     class Meta:
         model = Subscriber
