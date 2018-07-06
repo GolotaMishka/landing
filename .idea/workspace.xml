@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca4fc89d-a5c0-4bb2-be7f-67dade6a8cdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/faceToFace.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/group.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/group2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/group3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/profile2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/profile3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/profile3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/slide1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/slide1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/slide2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/slide3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/img/slide4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/css/style1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/css/style2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/js/forCourses.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/js/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/static_prod/js/slider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/models.py" afterPath="$PROJECT_DIR$/home/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,8 +61,8 @@
       <file leaf-file-name="secondCurse.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/landing/secondCurse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6578">
-              <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            <state relative-caret-position="221">
+              <caret line="454" column="32" lean-forward="false" selection-start-line="454" selection-start-column="32" selection-end-line="454" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -116,24 +100,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+            <state relative-caret-position="85">
+              <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/migrations/0001_initial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -183,10 +157,10 @@
         <option value="$PROJECT_DIR$/home/urls.py" />
         <option value="$PROJECT_DIR$/templates/landing/modal1.html" />
         <option value="$PROJECT_DIR$/templates/landing/modal2.html" />
-        <option value="$PROJECT_DIR$/home/models.py" />
         <option value="$PROJECT_DIR$/home/forms.py" />
         <option value="$PROJECT_DIR$/home/admin.py" />
         <option value="$PROJECT_DIR$/templates/landing/index.html" />
+        <option value="$PROJECT_DIR$/home/models.py" />
       </list>
     </option>
   </component>
@@ -236,24 +210,6 @@
               <item name="landing" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="landing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="landing" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="landing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="landing" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static_dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="landing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="landing" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -632,22 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/landing/firstCurse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8980">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/landing/secondCurse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6578">
-          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/landing/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -688,21 +628,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/landing/firstCurse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8980">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/landing/secondCurse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="454" column="32" lean-forward="false" selection-start-line="454" selection-start-column="32" selection-end-line="454" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
