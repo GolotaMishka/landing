@@ -453,7 +453,7 @@
               </p>
 
                <p class="phone">
-                <input name="{{ form.phone_number.name }}" type="tel" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone"  />
+                <input name="{{ form.phone_number.name }}" type="tel" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" pattern="\d{10,12}" minlength="10" maxlength="12" />
               </p>
 
 
