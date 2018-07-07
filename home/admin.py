@@ -2,22 +2,33 @@ from django.contrib import admin
 from .models import *
 
 
-class SubscriberAdmin (admin.ModelAdmin):
+class SubscriberFaceToFaceAdmin (admin.ModelAdmin):
 
-    list_display = [field.name for field in Subscriber._meta.fields]
-    list_filter = ['name','level','place']
+    list_display = [field.name for field in FaceToFace._meta.fields]
+    list_filter = ['name','place']
     search_fields = ['name']
 
-    fields = ["name","phone_number","level","place"]
+    fields = ["name","phone_number","place"]
 
-    #exclude = ["email"]
-	# inlines = [FieldMappingInline]
-	# fields = []
-    # #exclude = ["type"]
-	# #list_filter = ('report_data',)
-	# search_fields = ['category', 'subCategory', 'suggestKeyword']
+
 
     class Meta:
-        model = Subscriber
+        model = FaceToFace
 
-admin.site.register(Subscriber, SubscriberAdmin)
+admin.site.register(FaceToFace, SubscriberFaceToFaceAdmin)
+
+
+
+class SubscriberGroupAdmin (admin.ModelAdmin):
+
+    list_display = [field.name for field in Group._meta.fields]
+    list_filter = ['name','level']
+    search_fields = ['name']
+
+    fields = ["name","phone_number","level"]
+
+
+    class Meta:
+        model = Group
+
+admin.site.register(Group, SubscriberGroupAdmin)

@@ -2,12 +2,21 @@ from django import forms
 from .models import *
 
 
-class SubscriberForm(forms.ModelForm):
+class SubscriberFaceToFaceForm(forms.ModelForm):
     name = forms.CharField(required=True)
     phone_number = forms.CharField(required=True)
-    level = forms.CharField(required=False)
     place = forms.CharField(required=False)
     
     class Meta:
-        model = Subscriber
+        model = FaceToFace
+        exclude = [""]
+
+
+class SubscriberGroupForm(forms.ModelForm):
+    name = forms.CharField(required=True)
+    phone_number = forms.CharField(required=True)
+    level = forms.CharField(required=False)
+
+    class Meta:
+        model = Group
         exclude = [""]
