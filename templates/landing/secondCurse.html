@@ -446,7 +446,7 @@
       <div class="col-lg-12 col-md-12 col-xs-12 col-lg-offset-3 col-md-offset-3 col-xs-offset-3  text-center ">
         <div id="form-main">
           <div id="form-div">
-            <form action="" class="form formValidation" method="post" id="form1">{% csrf_token %}
+            <form action="" class="form formValidation" method="POST" id="form1">{% csrf_token %}
 
               <p class="name">
                 <input name="{{ form.name.name }}" type="text" autocomplete="off" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />

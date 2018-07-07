@@ -7,7 +7,7 @@ def landing(request):
     form = SubscriberForm(request.POST or None)
 
 
-    if request.method == "POST" and form.is_valid():
+    if request.method == "POST" :
         print (request.POST)
         print (form.cleaned_data)
         data  = form.cleaned_data
