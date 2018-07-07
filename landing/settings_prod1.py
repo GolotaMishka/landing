@@ -1,5 +1,5 @@
 DEBUG = False
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['shychkina.com']
 
 #settings for db on server
 DATABASES = {
