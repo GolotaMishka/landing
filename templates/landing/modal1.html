@@ -36,7 +36,6 @@
   </div>
 
 
-
 <div id="overlay"></div><!-- Пoдлoжкa -->
 
 
@@ -118,7 +117,7 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
         <div class="info">
-          <h4>Все мои задания ты будешь выполнять дома. Во время наших встреч или скайп-колов мы будем работать только над твоей речью, произношением и проверкой самостоятельной работы. </h4>
+          <h4>Все задания ты будешь выполнять дома. Во время встреч или скайп-колов вы с преподавателем будете работать только над твоей речью, произношением и проверкой самостоятельной работы. </h4>
         </div>
       </div>
     </div>
@@ -205,30 +204,30 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12  ">
         <ul id="accordion" class="accordion">
           <li>
-            <div class="link"><i class="fa fa-globe"></i>Стратегический Meeting – 1 час<i class="fa fa-chevron-down"></i></div>
+            <div class="link"><i class="fa fa-globe"></i>Стратегический Meeting – 45 мин<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="#">Наша первая встреча. Понимаем твои слабые места в английском, ставим задачи на курс. Учимся выжимать из каждого последующего задания курса максимальный результат.</a></li>
+              <li><a href="#">Первая встреча с преподавателем. Понимаете твои слабые места в английском, ставите задачи на курс. Учитесь выжимать из каждого последующего задания курса максимальный результат.</a></li>
 
             </ul>
           </li>
           <li>
             <div class="link"><i class="fa fa-globe"></i>Listening – 14 часов <i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="#">Учимся воспринимать английский на слух.  Понимаем сериалы без субтитров – и британские, и американские!</a></li>
+              <li><a href="#">Учишься воспринимать английский на слух.  Понимаешь сериалы без субтитров – и британские, и американские!</a></li>
 
             </ul>
           </li>
           <li>
             <div class="link"><i class="fa fa-globe"></i>Reading – 45 000 слов<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="#">Даём мозгу увидеть уже знакомые слова и грамматические конструкции в текстах. Прочитываем целую книгу на английском и учим вокабуляр из неё.</a></li>
+              <li><a href="#">Даёшь мозгу увидеть уже знакомые слова и грамматические конструкции в текстах. Прочитываешь целую книгу на английском и учишь вокабуляр из неё.</a></li>
 
             </ul>
           </li>
           <li>
             <div class="link"><i class="fa fa-globe"></i>Writing – 2 000 слов<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="#">Красиво выражаем мысли на бумаге. Делаем обзоры-рецензии фильмов и книг. В конце курса ты наконец-то сможешь написать грамотный пост в Facebook на английском.</a></li>
+              <li><a href="#">Красиво выражаешь мысли на бумаге. Делаешь обзоры-рецензии фильмов и книг. В конце курса ты наконец-то сможешь написать грамотный пост в Facebook на английском.</a></li>
 
             </ul>
           </li>
@@ -236,7 +235,7 @@
           <li>
             <div class="link"><i class="fa fa-globe"></i>Grammar – 40 упражнений<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="#">Строим приятные слуху предложения. Понимаем разницу между Past Simple и Present Perfect и всеми четырьмя Conditionals.</a></li>
+              <li><a href="#">Строишь приятные слуху предложения. Понимаешь разницу между Past Simple и Present Perfect и всеми четырьмя Conditionals.</a></li>
 
             </ul>
           </li>
@@ -244,7 +243,7 @@
           <li>
             <div class="link"><i class="fa fa-globe"></i>Speaking – 9 часов<i class="fa fa-chevron-down"></i></div>
             <ul class="submenu">
-              <li><a href="#">Чистим речь от ошибок. Наполняемся новыми словами и выражениями, работаем над произношением. Больше не боимся разговоров с американцами. </a></li>
+              <li><a href="#">Чистишь речь от ошибок. Наполняешься новыми словами и выражениями, работаешь над произношением. Больше не боишься разговоров с американцами. </a></li>
 
             </ul>
           </li>
@@ -293,7 +292,7 @@
         </div>
         <div class="row cost_rows">
           <div class="col-lg-12 normal_text">
-            <h2>Оплата частями - 850 грн/неделя!</h2>
+            <h2>Бесплатный доступ к фильмам на Netflix</h2>
           </div>
         </div>
       </div>
@@ -564,14 +563,14 @@
       <div class="col-lg-12 col-md-12 col-xs-12 col-lg-offset-3 col-md-offset-3 col-xs-offset-3  text-center ">
         <div id="form-main">
           <div id="form-div">
-            <form action="" class="form formValidation" method="post" id="form1">{% csrf_token %}
+            <form action="" class="form formValidation" method="POST" id="form1">{% csrf_token %}
 
               <p class="name">
                 <input name="{{ form.name.name }}"  type="text" autocomplete="off" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
               </p>
 
                <p class="phone">
-                <input name="{{ form.phone_number.name }}" type="text" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
+                <input name="{{ form.phone_number.name }}" type="tel" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" pattern="[\+]\d{12}" minlength="13" maxlength="13" value="+380"  />
               </p>
 
 
@@ -641,6 +640,8 @@
 <script src="{% static 'js/valideForm.js' %}"></script>
 <script src="{% static 'js/responsiveslides.min.js' %}"></script>
 <script src="{% static 'js/slider.js' %}"></script>
+<script src="{% static 'js/modal.js' %}"></script>
+
 
 
 

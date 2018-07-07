@@ -29,9 +29,9 @@ def curse1(request):
         print (data["name"])
 
         new_form = form.save()
-
-
-    return render(request, 'landing/firstCurse.html', locals())
+        return render(request, 'landing/modal1.html', locals())
+    else:
+        return render(request, 'landing/firstCurse.html', locals())
 
 def curse2(request):
 
@@ -44,9 +44,10 @@ def curse2(request):
         print (data["name"])
 
         new_form = form.save()
+        return render(request, 'landing/modal2.html', locals())
 
-
-    return render(request, 'landing/secondCurse.html', locals())
+    else:
+        return render(request, 'landing/secondCurse.html', locals())
 
 
 

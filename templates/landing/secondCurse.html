@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>2</title>
+    <title>Prokachka</title>
 
     <!-- Styles -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
@@ -453,7 +453,7 @@
               </p>
 
                <p class="phone">
-                <input name="{{ form.phone_number.name }}" type="text" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
+                <input name="{{ form.phone_number.name }}" type="tel" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" pattern="[\+]\d{12}" minlength="13" maxlength="13" value="+380"  />
               </p>
 
 
