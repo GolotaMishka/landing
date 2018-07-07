@@ -449,11 +449,11 @@
             <form action="" class="form formValidation" method="post" id="form1">{% csrf_token %}
 
               <p class="name">
-                <input name="{{ form.name.name }}" type="text"  class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
+                <input name="{{ form.name.name }}" type="text" autocomplete="off" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputValidation" placeholder="Имя" id="name" />
               </p>
 
                <p class="phone">
-                <input name="{{ form.phone_number.name }}" type="text"  class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
+                <input name="{{ form.phone_number.name }}" type="text" autocomplete="off" class="validate[required,length[10,20]] feedback-input inputValidation" placeholder="Телефон" id="phone" />
               </p>
 
 
