@@ -26,5 +26,5 @@ $(".formValidation").on("submit", function(e){
 
 var input = document.getElementById('phone');
 input.oninvalid = function(event) {
-  event.target.setCustomValidity('Введи номер телефона в формате "0999999999"');
+  event.target.setCustomValidity('Введи номер телефона в правильном формате');
 }
